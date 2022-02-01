@@ -1,23 +1,26 @@
+import os
 import re
 import sys
-import numpy as np
+import json
+import copy
 import argparse
+from functools import partial
+
+
+import numpy as np
+
 
 from PyQt5.QtGui import QPixmap, QFont
 from PyQt5.QtWidgets import (
 	QAction, QMainWindow, QLabel, 
 	QVBoxLayout, QRadioButton)
-import os
-import json
-
-import sys
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtGui import QPainter, QColor, QPen
 from PyQt5.QtCore import Qt
-import copy
-from functools import partial
+
 
 import styles
+
 
 ROOT_DIR = 'data/'
 ANNO_DIR = 'data/annos/'

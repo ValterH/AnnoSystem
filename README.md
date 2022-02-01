@@ -3,7 +3,7 @@ forked from [liruilong940607/AnnoSystem](https://github.com/liruilong940607/Anno
 
 ### How to use
 
-1. set your data dir and output dir. Line 22. & Line.23. in `main.py`
+1. set your data dir and output dir. Line 25. & Line.26. in `main.py`
 ```python
 ROOT_DIR = '/Users/dalong/workspace/ECCV2018/materials/2_result'
 ANNO_DIR = '/Users/dalong/workspace/ECCV2018/materials/AnnoSystem/annos/2_result'
