@@ -180,10 +180,11 @@ class ControlWindow(QMainWindow):
 		self.mainMenu.addAction(self.lastPartAction)
 
 		self.currentID = -1
-		self.dir = ROOT_DIR+dir +'/images'
+		self.dir = ROOT_DIR + dir +'/images'
 		self.imagelist = os.listdir(self.dir)
 		self.imagelist = [item for item in self.imagelist if item[-4:]=='.jpg']
-		self.imagelist.sort(key=lambda x:int(x[7:4:-1][::-1]))
+		
+		self.imagelist.sort(key=lambda item:int(re.findall(r"[0-9]+",item)[0]))
 
 		self.qlabel = MyQLabel(self)
 
