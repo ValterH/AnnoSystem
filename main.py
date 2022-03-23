@@ -154,9 +154,9 @@ class ControlWindow(QMainWindow):
 		self.nextImageAction = QAction("&NextImage", self)
 		self.nextImageAction.setShortcut("Q")
 		self.nextImageAction.triggered.connect(partial(self.nextImage, +1))
-		self.preImageAction = QAction("&PreImage", self)
-		self.preImageAction.setShortcut("A")
-		self.preImageAction.triggered.connect(partial(self.nextImage, -1))
+		self.PrevImageAction = QAction("&PrevImage", self)
+		self.PrevImageAction.setShortcut("A")
+		self.PrevImageAction.triggered.connect(partial(self.nextImage, -1))
 
 		self.nextItemAction = QAction("&NextItem", self)
 		self.nextItemAction.setShortcut("D")
@@ -173,7 +173,7 @@ class ControlWindow(QMainWindow):
 
 		self.mainMenu = self.menuBar()
 		self.mainMenu.addAction(self.nextImageAction)
-		self.mainMenu.addAction(self.preImageAction)
+		self.mainMenu.addAction(self.PrevImageAction)
 		self.mainMenu.addAction(self.nextItemAction)
 		self.mainMenu.addAction(self.changeVisAction)
 		self.mainMenu.addAction(self.nextPartAction)
